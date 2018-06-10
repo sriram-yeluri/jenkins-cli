@@ -15,7 +15,7 @@ touch README.md
 export GOPATH=/home/sriram/goProjects/jenkins-cli/  
 ```
 ### Docker image of jenkins LTS is used to test this cli. 
-[dockcer-hub-jenkins](https://hub.docker.com/r/jenkins/jenkins/)
+[docker-hub-jenkins](https://hub.docker.com/r/jenkins/jenkins/)
 pull jenkins images and spin a container. 
 
 ```
