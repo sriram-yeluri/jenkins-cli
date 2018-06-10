@@ -14,3 +14,16 @@ touch README.md
 
 export GOPATH=/home/sriram/goProjects/jenkins-cli/  
 ```
+### Docker image of jenkins LTS is used to test this cli. 
+[dockcer-hub-jenkins](https://hub.docker.com/r/jenkins/jenkins/)
+pull jenkins images and spin a container. 
+
+```
+docker pull jenkins/jenkins
+docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+For persistance data, use local volume : 
+docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+```
+
+For more details about managing jenkins image, click below link to visit official Jenkins git-hub page
+[official-Jenkins-github](https://github.com/jenkinsci/docker/blob/master/README.md)
